@@ -8,10 +8,6 @@ I wrote this article for my [Introduction to Linguistics](https://ufal.mff.cuni.
 
 ## 📄 How to build the PDF
 ```bash
-cd template/latex && mkdir -p out
-pdflatex --output-directory=out acl_latex.tex
-bibtex out/acl_latex
-pdflatex --output-directory=out acl_latex.tex
-pdflatex --output-directory=out acl_latex.tex
+cd template/latex && latexmk -pdf acl_latex.tex
 ```
 or just run `make build`\\`make clean`.
