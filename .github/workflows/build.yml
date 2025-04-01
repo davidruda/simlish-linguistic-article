@@ -6,14 +6,20 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: template/latex
           root_file: acl_latex.tex
           args: "-pdf -file-line-error -halt-on-error -interaction=nonstopmode -jobname=simlish"
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
+
+      - name: Move PDF file to pdf directory
+        run: |
+          cd template/latex && mkdir pdf && mv *.pdf -t pdf
+
+      - name: Deploy pdf folder to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: PDF
-          path: template/latex/*.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: template/latex/pdf
