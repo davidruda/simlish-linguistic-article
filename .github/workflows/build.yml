@@ -11,7 +11,7 @@ jobs:
         with:
           working_directory: template/latex
           root_file: acl_latex.tex
-          args: "-jobname=simlish"
+          #args: "-jobname=simlish"
       #- name: Upload PDF file
       #  uses: actions/upload-artifact@v4
       #  with:
