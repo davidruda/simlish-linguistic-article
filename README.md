@@ -1,6 +1,7 @@
-# A linguistic article about Simlish
+<!-- https://emoji.gg/pack/58048-sims-emojis -->
+# <a href="https://emoji.gg/emoji/7874_sims4"><img src="https://cdn3.emoji.gg/emojis/7874_sims4.png" width="24px" height="24px" alt=""></a> Linguistic article about Simlish
 
-An overview article about the _**Simlish**_ language, which is a fictional language used in _**The Sims**_.  
+An overview article about the _**Simlish**_ language, which is a fictional language used in _**The Sims<img src="https://cdn3.emoji.gg/emojis/7874_sims4.png" width="12px" height="12px" alt=""></a>**_.  
 I wrote this article for my [Introduction to Linguistics](https://ufal.mff.cuni.cz/courses/npfl063) class.
 
 ## 🍃 Overleaf template I used
@@ -10,4 +11,4 @@ I wrote this article for my [Introduction to Linguistics](https://ufal.mff.cuni.
 ```bash
 cd template/latex && latexmk -pdf acl_latex.tex
 ```
-or just run `make build`\\`make clean`.
+or just run `make`.
